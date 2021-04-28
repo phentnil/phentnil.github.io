@@ -15,6 +15,7 @@ I have several projects that I am currently working on:
 - HTML5
 - CSS
 - Python
+
 ### Somewhat knowledgeable
 - Java
 - C++
@@ -23,6 +24,7 @@ I have several projects that I am currently working on:
 - TypeScript
 - JSON
 - XML
+
 ### Some familiarity
 - Ruby
 - Swift
