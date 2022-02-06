@@ -1,2 +1,0 @@
-# Tells Apache to parse files with .html in server-side includes directives
-AddOutputFilter INCLUDES .html
