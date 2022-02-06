@@ -161,24 +161,14 @@ footer {
   font-size: 0.9em;
 }
 
-/* Providing styles for attribution modal */
-.modal {
-  border: 1px solid black;
-  border-radius: 3px;
-  color: black;
-  display: none;
-  float: right;
-  margin-top: 1rem;
-  max-width: 400px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding-top: 1rem;
-  width: 100%;
-}
-span#modalView:hover {
-  color: white;
+main {
+  min-height: 150px;
 }
 
-span#modalView:hover + .modal {
-  display: block;
+/* Providing styles for attribution modal */
+.modal {
+  color: black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 }
