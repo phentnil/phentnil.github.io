@@ -162,8 +162,7 @@ footer {
 }
 
 article,
-main,
-nav {
+main {
   min-height: 150px;
 }
 
