@@ -1,0 +1,11 @@
+/****************************************************
+This style sheet takes effect when the width of the *
+viewport (browser window) is reduced to less than   *
+900px, or when, upon first loading the page, the    *
+device width is seen as less than 900px.            */
+
+/****************************************************
+gives some whitespace on either side of the display */
+body {
+  width: 95%;
+}
