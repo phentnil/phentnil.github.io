@@ -105,3 +105,6 @@ dist
 
 # Visual Studio Code workspace files
 *.code-workspace
+
+# "excerpt.md" files detailing project prompts
+*/**/excerpt.md
