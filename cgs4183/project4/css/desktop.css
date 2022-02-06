@@ -161,8 +161,9 @@ footer {
   font-size: 0.9em;
 }
 
-/* Providing styles for the modal */
+/* Providing styles for attribution modal */
 .modal {
+  border: 2px solid transparent;
   display: none;
   height: 100%;
   left: 0;
@@ -173,4 +174,9 @@ footer {
   top: 0;
   width: 100%;
   z-index: 100;
+}
+
+span#modalView:hover + .modal,
+span#modalView:focus + .modal {
+  border-color: green;
 }
