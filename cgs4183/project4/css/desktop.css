@@ -160,3 +160,17 @@ footer {
   font-weight: bold;
   font-size: 0.9em;
 }
+
+/* Providing styles for the modal */
+.modal {
+  display: none;
+  height: 100%;
+  left: 0;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
