@@ -161,14 +161,17 @@ footer {
   font-size: 0.9em;
 }
 
-main {
+article,
+main,
+nav {
   min-height: 150px;
 }
 
-/* Providing styles for attribution modal */
-.modal {
+/* Providing styles for attribution information */
+aside#attribution {
   color: black;
-  overflow-x: hidden;
-  overflow-y: auto;
+  font-size: xx-small;
+  line-height: normal;
+  padding-top: 0.6rem;
   width: 100%;
 }
