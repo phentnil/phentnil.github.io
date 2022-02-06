@@ -1,11 +1,65 @@
 /****************************************************
-This style sheet takes effect when the width of the *
-viewport (browser window) is reduced to less than   *
-900px, or when, upon first loading the page, the    *
+This style sheet takes effect when the width of the 
+viewport (browser window) is reduced to less than
+900px, or when, upon first loading the page, the
 device width is seen as less than 900px.            */
 
-/****************************************************
-gives some whitespace on either side of the display */
-body {
-  width: 95%;
+/* gives some whitespace on either side of the display */
+body { width: 95%; }
+
+/* visually separates a menu link from the one below it */
+ul#mainLinks li { border-bottom: 1px solid #FFF; }
+
+/* move 4th and following menu items to second row */
+ul#mainLinks li:nth-child(4) { clear: left; }
+
+/* ensures both rows of menu links have same length*/
+ul#mainLinks li:nth-child(1) { width: 32%; }
+ul#mainLinks li:nth-child(2) { width: 32%; }
+ul#mainLinks li:nth-child(3) { width: 32%; }
+ul#mainLinks li:nth-child(4) { width: 24%; }
+ul#mainLinks li:nth-child(5) { width: 24%; }
+ul#mainLinks li:nth-child(6) { width: 24%; }
+ul#mainLinks li:nth-child(7) { width: 24%; }
+
+/*******************************************************
+makes right edges of first and second menu item rows
+line up, at the expense of a 2px gap instead of a 1px
+gap between "e-store" and "Products+Services"          */
+nav ul li:nth-child(2) { border-right: 2px solid #FFF; }
+
+/* makes logo "scale down" as the width decreases */
+div#logo img {
+  max-width: 70%;
+  height: auto;
 }
+
+/* remove the image from the home page*/
+div#image { display: none; }
+
+nav#subMenu { float: left; }
+
+/* container for the textual content of each page*/
+article {
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+}
+
+/* same style for both of these in the tablet configuration */
+article#textOnly,
+article#textLeft { width: 95%; }
+
+article#textRight {
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+}
+
+/* reduce size of footer text to prevent it overflowing its space */
+footer { font-size: 80%; }
+
+/************************************************************
+alternate styles for nature4 to remove video from home page */
+article#textLeftWithVideo { width: 95%; }
+div#video { display: none; }
