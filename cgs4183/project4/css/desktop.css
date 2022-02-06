@@ -165,11 +165,6 @@ footer {
   font-size: 0.9em;
 }
 
-article,
-main {
-  min-height: 150px;
-}
-
 /* Providing styles for attribution information */
 aside#attribution {
   color: black;
