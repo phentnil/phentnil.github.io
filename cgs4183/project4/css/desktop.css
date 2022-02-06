@@ -68,15 +68,15 @@ nav ul li {
   width: 127px;
   height: 25px;
   line-height: 25px;
-  border-right: 1px solid #fff;
-  background-color: #093;
+  border-right: 1px solid #ffffff;
+  background-color: #003399;
   text-align: center;
 }
 
 /* Vertical menu items need these revisions */
 nav#subMenu ul li {
-  border-top: 1px solid #fff;
-  background-color: #0b3;
+  border-top: 1px solid #ffffff;
+  background-color: #0033bb;
 }
 
 /* Last item in main menu needs these revisions */
@@ -86,7 +86,7 @@ ul#mainLinks li:last-child {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.7em;
@@ -94,8 +94,8 @@ nav ul li a {
 
 nav ul li a:hover {
   padding: 2px 1px;
-  background-color: #3f3;
-  color: #000;
+  background-color: #3333ff;
+  color: #000000;
 }
 
 /**********************************************************
@@ -154,8 +154,8 @@ footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   line-height: 25px;
-  background-color: #093;
-  color: #ddd;
+  background-color: #003399;
+  color: #dddddd;
   text-align: center;
   font-weight: bold;
   font-size: 0.9em;
