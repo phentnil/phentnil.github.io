@@ -1,31 +1,11 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <base href="https://phentnil.github.io/cgs4183/project4/">
-  <link rel="stylesheet" href="css/desktop.css">
-  <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 900px)">
-  <title>Starling Shrub Starters - Vision & Mission</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
+---
+---
+{% include document_head.html %}
 
 <body>
   <header>
-    <div id="logo"><a href="index.html"><img class="head-img" src="images/s3logo.png"
-          alt="Starling Shrub Starters' Logo" title="Starling Shrub Starters' Logo" width="128" height="128" /></div>
-    <nav id="mainMenu">
-      <ul id="mainLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/estore.html">eStore</a></li>
-        <li><a href="pages/products.html">Products &amp; Services</a></li>
-        <li><a href="pages/consultation.html">Consultation</a></li>
-        <li><a href="pages/about.html">About Us</a></li>
-        <li><a href="pages/contact.html">Contact Us</a></li>
-        <li><a href="pages/sitemap.html">Site Map</a></li>
-      </ul>
-    </nav>
+{% include logo.html %}
+{% include mainmenu.html %}
   </header>
   <main>
     <nav id="subMenu">
@@ -55,17 +35,7 @@
     </article>
   </main>
   <footer>
-    <p>Starling Shrub Starters &copy; 2022, Jason Starling. All rights reserved.</p>
-    <p><a href="https://commons.wikimedia.org/wiki/File:Chestnut-tailed_Starling_I_IMG_2508.jpg">Original image of
-        Starling bird</a> licensed under the <a
-        href="https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License,_version_1.2">GNU Free
-        Documentation License</a> and the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative
-        Commons Attribution-Share Alike 3.0 Unported license</a></p>
-    <p>Plant stand image <a
-        href="https://i1.wp.com/shopnanjala.com/wp-content/uploads/2019/07/Nanjala-Juakali-Metal-Planter-Stand-03.jpg?fit=760%2C900&ssl=1">original
-        source</a> is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
-        Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
-    <p><a href="pages/contact.html">Contact Us</a><a href="pages/sitemap.html">Site Map</a></p>
+{% include footer_content.html %}
   </footer>
 </body>
 
