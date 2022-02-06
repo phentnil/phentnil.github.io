@@ -28,6 +28,152 @@ body {
   font-size: 1em;
 }
 
+/**************************************************
+individual element margins set by trial and error */
+h3 {
+  margin: 0.5em 0 0.2em;
+}
+p {
+  margin: 0 0.2em 0.7em 0;
+}
+
+/*********************************************
+company logo appears at the top of each page */
+div#logo {
+  padding: 10px 0 0 5px;
+}
+
+/*********************************
+two kinds of menus: main and sub */
+
+/* appears below logo on every page */
+nav#mainMenu {
+  width: 100%;
+}
+
+/* appears at left in content area on some pages */
+nav#subMenu {
+  float: left;
+  width: 128px;
+}
+
+/***************************************
+two groups of menu links: main and sub */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  width: 127px;
+  height: 25px;
+  line-height: 25px;
+  border-right: 1px solid #fff;
+  background-color: #093;
+  text-align: center;
+}
+
+/* vertical menu items need these revisions */
+nav#subMenu ul li {
+  border-top: 1px solid #fff;
+  background-color: #0b3;
+}
+
+/* last item in main menu needs these revisions */
+ul#mainLinks li:last-child {
+  border-right-width: 0;
+  width: 132px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+nav ul li a:hover {
+  padding: 2px 1px;
+  background-color: #3f3;
+  color: #000;
+}
+
+/*******************************************************************
+only home page has text at left and image at right in content area */
+article#textLeft {
+  float: left;
+  width: 63%;
+  margin-left: 1em;
+}
+
+div#image {
+  float: left;
+  width: 33%;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+/*******************************************************
+pages with submenus at the left have text at the right */
+article#textRight {
+  float: left;
+  width: 750px;
+  margin-left: 10px;
+}
+
+/*****************************************************
+some pages may contain only text following a heading */
+article#textOnly {
+  float: left;
+  width: 95%;
+  margin-left: 1em;
+}
+
+/********************************************
+move the site map list away from the border */
+article#siteMap {
+  margin-left: 10px;
+}
+
+/*****************************************************************
+list structure must be restored for the site map page, since all
+padding and margins have been removed by the global settings     */
+article#siteMap ol,
+article#siteMap ul {
+  margin: 0 30px 10px;
+}
+
+/********************************************
+footer now contains just a copyright notice */
+footer {
+  clear: left;
+  width: 100%;
+  height: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  line-height: 25px;
+  background-color: #093;
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/*******************************************************************
+only home page has text at left and video at right in content area */
+article#textLeftWithVideo {
+  float: left;
+  width: 53%;
+  margin-left: 1em;
+}
+
+div#video {
+  float: left;
+  width: 43%;
+  padding-top: 50px;
+  text-align: center;
+}
+
 /**********************************
 Changes below need further review */
 
