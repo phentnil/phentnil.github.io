@@ -1,0 +1,96 @@
+/*****************************************************
+This style sheet takes effect when the width of the  *
+viewport (browser window) is reduced to less than    *
+900px, or when, upon first loading the page, the     *
+device width is seen as less than 900px.             */
+
+/*****************************************************
+Gives some whitespace on either side of the display  */
+body {
+  width: 95%;
+}
+
+/*****************************************************
+Visually separates a menu link from the one below it */
+ul#mainLinks li {
+  border-bottom: 1px solid #fff;
+}
+
+/* Move 4th and following menu items to second row */
+ul#mainLinks li:nth-child(4) {
+  clear: left;
+}
+
+/* Ensures both rows of menu links have same length */
+ul#mainLinks li:nth-child(1) {
+  width: 32%;
+}
+ul#mainLinks li:nth-child(2) {
+  width: 32%;
+}
+ul#mainLinks li:nth-child(3) {
+  width: 32%;
+}
+ul#mainLinks li:nth-child(4) {
+  width: 24%;
+}
+ul#mainLinks li:nth-child(5) {
+  width: 24%;
+}
+ul#mainLinks li:nth-child(6) {
+  width: 24%;
+}
+ul#mainLinks li:nth-child(7) {
+  width: 24%;
+}
+
+/*****************************************************
+Makes right edges of first and second menu item rows *
+line up, at the expense of a 2px gap instead of a    *
+1px gap between "eStore" and "Products & Services"   */
+nav ul li:nth-child(2) {
+  border-right: 2px solid #fff;
+}
+
+/* Makes logo "scale down" as the width decreases */
+div#logo img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Remove the image from the home page */
+div#image {
+  display: none;
+}
+
+nav#subMenu {
+  float: left;
+}
+
+/* Container for the textual content of each page */
+article {
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+}
+
+/*****************************************************
+Same style for both of these in the tablet           *
+configuration                                        */
+article#textOnly,
+article#textLeft {
+  width: 95%;
+}
+
+article#textRight {
+  float: left;
+  width: 70%;
+  margin-left: 10px;
+}
+
+/*****************************************************
+Reduce size of footer text to prevent it overflowing *
+its space                                            */
+footer {
+  font-size: 80%;
+}

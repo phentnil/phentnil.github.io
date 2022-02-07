@@ -1,0 +1,175 @@
+/**********************************************************
+Global settings to remove any default padding and margins */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/**********************************************************
+The following resets these elements to block-level in     *
+case the browser does not default to this setting.        */
+main,
+header,
+footer,
+nav,
+article {
+  display: block;
+}
+
+/**********************************************************
+Width and margin properties set here apply only to body;  *
+font properties set here will be inherited throughout.    */
+body {
+  width: 900px;
+  margin: 20px auto 0 auto;
+  border: 4px solid black;
+  border-radius: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/**********************************************************
+Individual element margins set by trial and error         */
+h3 {
+  margin: 0.5em 0 0.2em;
+}
+p {
+  margin: 0 0.2em 0.7em 0;
+}
+
+/**********************************************************
+Company logo appears at the top of each page              */
+div#logo {
+  padding: 10px 0 0 5px;
+}
+
+/**********************************************************
+Two kinds of menus: main and sub                          */
+
+/* Appears below logo on every page */
+nav#mainMenu {
+  width: 100%;
+}
+
+/* Appears at left in content area on some pages */
+nav#subMenu {
+  float: left;
+  width: 128px;
+}
+
+/**********************************************************
+Two groups of menu links: main and sub                    */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  width: 127px;
+  height: 25px;
+  line-height: 25px;
+  border-right: 1px solid #fff;
+  background-color: #039;
+  text-align: center;
+}
+
+/* Vertical menu items need these revisions */
+nav#subMenu ul li {
+  border-top: 1px solid #fff;
+  /* background-color: #03b; */
+}
+
+nav#subMenu ul li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+/* Last item in main menu needs these revisions */
+ul#mainLinks li:last-child {
+  border-right-width: 0;
+  width: 132px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+nav ul li a:hover {
+  padding: 2px 1px;
+  background-color: #44f;
+  color: #ddf;
+}
+
+/**********************************************************
+Only the home page has text at left and image at right in *
+content area                                              */
+article#textLeft {
+  float: left;
+  width: 63%;
+  margin-left: 1em;
+}
+
+div#image {
+  float: left;
+  width: 33%;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+/*******************************************************
+Pages with submenus at the left have text at the right */
+article#textRight {
+  float: left;
+  width: 750px;
+  margin-left: 10px;
+}
+
+/*****************************************************
+Some pages may contain only text following a heading */
+article#textOnly {
+  float: left;
+  width: 95%;
+  margin-left: 1em;
+}
+
+/*****************************************************
+Move the site map list away from the border          */
+article#siteMap {
+  margin-left: 10px;
+}
+
+/*****************************************************
+List structure must be restored for the site map     *
+page, since all padding and margins have been        *
+removed by the global settings                       */
+article#siteMap ol,
+article#siteMap ul {
+  margin: 0 30px 10px;
+}
+
+/*****************************************************
+Footer now contains just a copyright notice          */
+footer {
+  clear: left;
+  width: 100%;
+  height: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  line-height: 25px;
+  background-color: #039;
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Providing styles for attribution information */
+aside#attribution {
+  color: black;
+  font-size: xx-small;
+  line-height: normal;
+  padding-top: 0.6rem;
+  width: 100%;
+}
