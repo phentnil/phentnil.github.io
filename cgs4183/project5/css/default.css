@@ -1,18 +1,34 @@
 main {
-  background-color: #FFB;
+  background-color: #ffb;
+  border: 4px solid black;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 9px #000;
+  font-family: Helvetica, Arial, sans-serif;
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 25px;
-  box-shadow: 5px 5px #000;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-.BMI { width: 650px; }
+.radio tr td:nth-child(2) {
+  width: 250px;
+}
 
-.Feedback { width: 450px; }
+.consultations {
+  width: 650px;
+}
 
-.Centered { text-align: center; }
+.feedback {
+  width: 450px;
+}
 
-.RightAligned { text-align: right; }
+.center {
+  text-align: center;
+}
 
-select, input, textarea { background-color: #EEE; }
+.rightAligned {
+  text-align: right;
+}
+
+select,
+input,
+textarea {
+  background-color: #eee;
+}
