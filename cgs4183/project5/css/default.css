@@ -1,0 +1,18 @@
+main {
+  background-color: #FFB;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 5px 5px #000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.BMI { width: 650px; }
+
+.Feedback { width: 450px; }
+
+.Centered { text-align: center; }
+
+.RightAligned { text-align: right; }
+
+select, input, textarea { background-color: #EEE; }
