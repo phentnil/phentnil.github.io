@@ -12,24 +12,74 @@
 
 <body>
   <main class="consultations">
-    <h1>Consultations</h1>
-    <p>Coming soon... our Consultation page! We are currently building this space to detail the types of consultations
-      we provide and will be updated soon. Thank you for your patience and continued patronage!</p>
+    <h4 class="center">Consultations</h4>
+    <p>Use this form to select one of our Consultation or Repotting Services. Consultations can be done in-store or
+      online. Repotting Services can be done for small, medium, or large plants.</p>
+    <dl>
+      <dt>Small plants</dt>
+      <dd>Up to 11" tall</dd>
+      <dt>Medium plants</dt>
+      <dd>Greater than 11" and up to 24" tall.</dd>
+      <dt>Large plants</dt>
+      <dd>Greater than 24" tall.</dd>
+    </dl>
     <form id="consultationsForm">
       <fieldset>
         <legend>Consultation Type</legend>
-        <table>
+        <table class="radio">
           <tr>
             <td><input type="radio" name="consultType" id="cplace"></td>
             <td><label for="cplace">Plant Placement Consultation</label></td>
+            <td>$20/hr</td>
           </tr>
           <tr>
             <td><input type="radio" name="consultType" id="cselect"></td>
             <td><label for="cselect">Plant Selection Consultation</label></td>
+            <td>$20/hr</td>
           </tr>
           <tr>
             <td><input type="radio" name="consultType" id="crepot"></td>
             <td><label for="crepot">Plant Repotting</label></td>
+            <td>($25 - 50 per plant, see below)</td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Consultation Location</legend>
+        <section>Choose whether you would like an in-store consultation or an online consultation.</section>
+        <section>(Skip for repotting service)</section>
+        <table class="radio">
+          <tr>
+            <td><input type="radio" name="cLoc" id="consultStore"></td>
+            <td><label for="consultStore">In-Store Consultation</label></td>
+            <td>+$5/hr</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="cLoc" id="consultOnline"></td>
+            <td><label for="consultOnline">Online Consultation</label></td>
+            <td>+$10/hr</td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Plant Repotting Options</legend>
+        <section>Select a plant repotting option.</section>
+        <section>(Skip for consultation service)</section>
+        <table class="radio">
+          <tr>
+            <td><input type="radio" name="rType" id="repotSmall"></td>
+            <td><label for="repotSmall">Small Plant Repotting</label></td>
+            <td>$25 per plant</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="rType" id="repotMedium"></td>
+            <td><label for="repotMedium">Medium Plant Repotting</label></td>
+            <td>$35 per plant</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="rType" id="repotLarge"></td>
+            <td><label for="repotLarge">Large Plant Repotting</label></td>
+            <td>$50 per plant</td>
           </tr>
         </table>
       </fieldset>
