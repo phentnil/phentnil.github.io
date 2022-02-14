@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="https://phentnil.github.io/cgs4183/project6/">
+  <title>Starling Shrub Starters - Consultations</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/consultationFormValidation.js"></script>
+</head>
+
+<body>
+  <main class="consultations">
+    <h4 class="center">Consultations</h4>
+    <p>Use this form to select one of our Consultation or Repotting Services. Consultations can be done in-store or
+      online. Repotting Services can be done for small, medium, or large plants.</p>
+    <dl>
+      <dt>Small plants</dt>
+      <dd>Up to 11" tall</dd>
+      <dt>Medium plants</dt>
+      <dd>Greater than 11" and up to 24" tall.</dd>
+      <dt>Large plants</dt>
+      <dd>Greater than 24" tall.</dd>
+    </dl>
+    <form id="consultationsForm" onsubmit="consultationFormValidate()">
+      <fieldset>
+        <legend>Consultation Type</legend>
+        <table class="radio">
+          <tr>
+            <td class="radio"><input type="radio" name="consultType" id="cplace" value="placement"></td>
+            <td><label for="cplace">Plant Placement Consultation</label></td>
+            <td>$20/hr</td>
+          </tr>
+          <tr>
+            <td class="radio"><input type="radio" name="consultType" id="cselect" value="selection"></td>
+            <td><label for="cselect">Plant Selection Consultation</label></td>
+            <td>$20/hr</td>
+          </tr>
+          <tr>
+            <td class="radio"><input type="radio" name="consultType" id="crepot" value="repotting"></td>
+            <td><label for="crepot">Plant Repotting</label></td>
+            <td>($25 - 50 per plant, see below)</td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Consultation Location</legend>
+        <section>Choose whether you would like an in-store consultation or an online consultation.</section>
+        <section>(Skip for repotting service)</section>
+        <table class="radio">
+          <tr>
+            <td class="radio"><input type="radio" name="cLoc" id="consultStore"></td>
+            <td><label for="consultStore">In-Store Consultation</label></td>
+            <td>+$5/hr</td>
+          </tr>
+          <tr>
+            <td class="radio"><input type="radio" name="cLoc" id="consultOnline"></td>
+            <td><label for="consultOnline">Online Consultation</label></td>
+            <td>+$10/hr</td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Plant Repotting Options</legend>
+        <section>Select a plant repotting option.</section>
+        <section>(Skip for consultation service)</section>
+        <table class="radio">
+          <tr>
+            <td class="radio"><input type="radio" name="rType" id="repotSmall"></td>
+            <td><label for="repotSmall">Small Plant Repotting</label></td>
+            <td>$25 per plant</td>
+          </tr>
+          <tr>
+            <td class="radio"><input type="radio" name="rType" id="repotMedium"></td>
+            <td><label for="repotMedium">Medium Plant Repotting</label></td>
+            <td>$35 per plant</td>
+          </tr>
+          <tr>
+            <td class="radio"><input type="radio" name="rType" id="repotLarge"></td>
+            <td><label for="repotLarge">Large Plant Repotting</label></td>
+            <td>$50 per plant</td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Email Confirmation</legend>
+        <table>
+          <tr>
+            <td><label for="email">E-mail address:</label></td>
+            <td><input type="email" name="email" id="email" size="40"></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Processing</legend>
+        <table>
+          <tr>
+            <td><input type="submit" value="Submit Order"></td>
+            <td><input type="reset" value="Reset Form"></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </main>
+</body>
+
+</html>

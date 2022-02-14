@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="https://phentnil.github.io/cgs4183/project6/">
+  <title>Starling Shrub Starters - Contact Us</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/feedbackFormValidation.js"></script>
+</head>
+
+<body>
+  <main class="feedback">
+    <article id="textRight">
+      <h4 class="center">Contact Us: Feedback Form</h4>
+      <form id="contact" onsubmit="feedbackFormValidate()">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <table>
+            <tr>
+              <td>Salutation:</td>
+              <td><select name="salute" id="salute">
+                  <option value="0">&nbsp;</option>
+                  <option value="mrs">Mrs.</option>
+                  <option value="ms">Ms.</option>
+                  <option value="mr">Mr.</option>
+                  <option value="dr">Dr.</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><label for="firstName">First Name:</label></td>
+              <td><input type="text" name="firstName" id="firstName" size="40"></td>
+            </tr>
+            <tr>
+              <td><label for="lastName">Last Name:</label></td>
+              <td><input type="text" name="lastName" id="lastName" size="40"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email Address:</label></td>
+              <td><input type="email" name="email" id="email" size="40"></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone Number:</label></td>
+              <td><input type="text" name="phone" id="phone" size="40"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Service Type</legend>
+          <section>Which service did you purchase?</section>
+          <table>
+            <tr>
+              <td class="radio"><input type="radio" name="consultType" id="cplace"></td>
+              <td><label for="cplace">Plant Placement Consultation</label></td>
+            </tr>
+            <tr>
+              <td class="radio"><input type="radio" name="consultType" id="cselect"></td>
+              <td><label for="cselect">Plant Selection Consultation</label></td>
+            </tr>
+            <tr>
+              <td class="radio"><input type="radio" name="consultType" id="crepot"></td>
+              <td><label for="crepot">Plant Repotting</label></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Consultation Location</legend>
+          <section>If you had a consultation, select which location you chose.</section>
+          <table>
+            <tr>
+              <td colspan="5"><input type="radio" name="cLoc" id="consultStore"> <label for="consultStore">In-Store
+                  Consultation</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="radio" name="cLoc" id="consultOnline"> <label for="consultOnline">Online
+                  Consultation</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><label for="consultComments">Please provide any comments about your experience with our
+                  consultation service:</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><textarea name="consultComments" id="consultComments" cols="30" rows="6"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="5">Rating of Consult Service (1 is worst, 5 is best):</td>
+            </tr>
+            <tr class="rating">
+              <td><label for="consultRating_1"><input type="radio" name="consultRating" id="consultRating_1">1</label>
+              </td>
+              <td><label for="consultRating_2"><input type="radio" name="consultRating" id="consultRating_2">2</label>
+              </td>
+              <td><label for="consultRating_3"><input type="radio" name="consultRating" id="consultRating_3">3</label>
+              </td>
+              <td><label for="consultRating_4"><input type="radio" name="consultRating" id="consultRating_4">4</label>
+              </td>
+              <td><label for="consultRating_5"><input type="radio" name="consultRating" id="consultRating_5">5</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Plant Repotting Size</legend>
+          <section>If you had a plant repotted, choose which size you selected.</section>
+          <table>
+            <tr>
+              <td colspan="5"><input type="radio" name="rType" id="repotSmall"> <label for="repotSmall">Small Plant
+                  Repotting</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="radio" name="rType" id="repotMedium"> <label for="repotMedium">Medium Plant
+                  Repotting</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><input type="radio" name="rType" id="repotLarge"> <label for="repotLarge">Large Plant
+                  Repotting</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><label for="repotComments">Please provide any comments about your experience with our
+                  repotting service:</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><textarea name="repotComments" id="repotComments" cols="30" rows="6"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="5">Rating of Repot Service (1 is worst, 5 is best):</td>
+            </tr>
+            <tr class="rating">
+              <td><label for="repotRating_1"><input type="radio" name="repotRating" id="repotRating_1">1</label>
+              </td>
+              <td><label for="repotRating_2"><input type="radio" name="repotRating" id="repotRating_2">2</label>
+              </td>
+              <td><label for="repotRating_3"><input type="radio" name="repotRating" id="repotRating_3">3</label>
+              </td>
+              <td><label for="repotRating_4"><input type="radio" name="repotRating" id="repotRating_4">4</label>
+              </td>
+              <td><label for="repotRating_5"><input type="radio" name="repotRating" id="repotRating_5">5</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Other</legend>
+          <table>
+            <tr>
+              <td colspan="5"><label for="otherComments">Other Comments:</label></td>
+            </tr>
+            <tr>
+              <td colspan="5"><textarea name="otherComments" id="otherComments" rows="6" cols="30"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="5">Overall Rating of Service (1 is worst, 5 is best):</td>
+            </tr>
+            <tr class="rating">
+              <td><label for="overallRating_1"><input type="radio" name="overallRating" id="overallRating_1">1</label>
+              </td>
+              <td><label for="overallRating_2"><input type="radio" name="overallRating" id="overallRating_2">2</label>
+              </td>
+              <td><label for="overallRating_3"><input type="radio" name="overallRating" id="overallRating_3">3</label>
+              </td>
+              <td><label for="overallRating_4"><input type="radio" name="overallRating" id="overallRating_4">4</label>
+              </td>
+              <td><label for="overallRating_5"><input type="radio" name="overallRating" id="overallRating_5">5</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"><input type="submit" value="Send Feedback"></td>
+              <td colspan="2" class="rightAligned"><input type="reset" value="Reset Form"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </article>
+  </main>
+</body>
+
+</html>
